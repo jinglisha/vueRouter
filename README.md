@@ -1,19 +1,35 @@
-# demo
-
-## Project setup
+# 如何使用vue-router
+## 利用脚手架搭建项目
+### 安装node
+### 安装npm
+### 安装vue-cli
+### vue create 项目名
+## 安装路由
+`npm i vue-router`
+## 引入路由
+`import vueRouter form 'vue-router'`
+## 使用路由
+`Vue.use(vueRouter)`
+## 定义路由组件
+```js
+const routes = [
+  {
+    path:'/',
+    component:'./Home'
+  },{
+    path:'./About',
+    component:()=>import('./About')
+  }
+]
 ```
-npm install
+## 配置路由
+```js
+  const router = new VueRouter({routes})
 ```
-
-### Compiles and hot-reloads for development
+## 把路由组件挂载到Vue实例上
+```js
+new Vue({
+  render:h=>h(App),
+  router
+}).$mount('#app')
 ```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
