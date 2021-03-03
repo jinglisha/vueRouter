@@ -11,8 +11,8 @@
 import vueRouter form 'vue-router'
 ```
 ## 使用路由
-```
-jsVue.use(vueRouter)
+```js
+Vue.use(vueRouter)
 ```
 ## 定义路由组件
 ```js
@@ -28,7 +28,7 @@ const routes = [
 ```
 ## 配置路由
 ```js
-  const router = new VueRouter({routes})
+const router = new VueRouter({routes})
 ```
 ## 把路由组件挂载到Vue实例上
 ```js
