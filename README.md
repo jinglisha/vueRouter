@@ -7,9 +7,13 @@
 ## 安装路由
 `npm i vue-router`
 ## 引入路由
-`import vueRouter form 'vue-router'`
+```js
+import vueRouter form 'vue-router'
+```
 ## 使用路由
-`Vue.use(vueRouter)`
+```
+jsVue.use(vueRouter)
+```
 ## 定义路由组件
 ```js
 const routes = [
