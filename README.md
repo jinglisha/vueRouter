@@ -28,7 +28,10 @@ const routes = [
 ```
 ## 配置路由
 ```js
-const router = new VueRouter({routes})
+const router = new VueRouter({
+mode:'history',
+routes
+})
 ```
 ## 把路由组件挂载到Vue实例上
 ```js
