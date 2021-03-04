@@ -21,7 +21,7 @@ const routes = [
     path:'/',
     component:'./Home'
   },{
-    path:'/About',
+    path:'/about',
     component:()=>import('./About')
   }
 ]
